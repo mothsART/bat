@@ -1,0 +1,22 @@
+Source: bat
+Section: utils
+Priority: optional
+Maintainer: Jérémie Ferry <jerem.ferry@gmail.com>
+Build-Depends:
+  debhelper (>=9),
+  cargo,
+  cmake,
+  zlib1g-dev,
+  quilt
+Standards-Version: 4.1.1
+
+Package: bat
+Version: 0.4.1
+Section: utils
+Priority: optional
+Maintainer: Jérémie Ferry <jerem.ferry@gmail.com>
+Architecture: any
+Pre-Depends: dpkg (>= 1.17.14)
+Depends: zlib1g, ${shlib:Depends}
+Description: A cat(1) clone with syntax highlighting and Git integration.
+
